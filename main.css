@@ -1,0 +1,72 @@
+:root{
+    --title-font: 'Lato', sans-serif;
+    --title-weight: 900;
+    --subtitle-weight: 400;
+    --coding-font: 'Roboto Mono', monospace;
+}
+body{
+    margin: 0;
+}
+
+.container{
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem;
+}
+.title, .left, .center, .right{
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    border-radius: 0.5rem;
+    width: 33%;
+    /* height: 575px; */
+    transition: width 300ms ease;
+}
+.left{
+    background-image: url(./assets/andrey-zvyagintsev-x0c6vTO5ibA-unsplash.jpg) ;
+}
+.center{
+    background-image: url(./assets/prince-akachi-L3bSgneg7cg-unsplash.jpg) ;
+}
+.right{
+    background-image: url(./assets/olga-serjantu-9cFuZzPMmkU-unsplash.jpg) ;
+}
+.left:hover{
+    width: 100%;
+    cursor:pointer;
+}
+.center:hover{
+    width: 100%;
+    cursor:pointer;
+}
+.right:hover{
+    width: 100%;
+    cursor:pointer;
+}
+.title{
+    font-family: var(--title-font);
+    font-weight: var(--title-weight);
+    font-size: 6rem;
+}
+.subtitle{
+    font-family: var(--coding-font);
+    font-size: 1.5rem;
+    font-weight: var(--title-weight);
+}
+.centred-input{
+    text-align: center;
+}
+.standard-input{
+    width: 50%;
+    height: 2rem;
+    padding: auto;
+    border: solid 0.15rem;
+    text-align: center;
+    color: black; 
+}
+::placeholder{
+    color: black;
+    font-family: var(--coding-font);
+}
